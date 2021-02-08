@@ -1,0 +1,17 @@
+{
+  "name": "phoenix.eco",
+  "version": "1.0.0",
+  "description": "A simple mongoose economy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "economy",
+    "discord-eco",
+    "mongoose-economy"
+  ],
+  "author": "Tatsumaki",
+  "license": "GPL -3.0"
+}
