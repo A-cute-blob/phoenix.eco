@@ -13,5 +13,14 @@
     "mongoose-economy"
   ],
   "author": "Tatsumaki",
-  "license": "GPL -3.0"
+  "license": "GPL -3.0",
+  "devDependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "jsdoc": "^3.6.6"
+  },
+  "dependencies": {
+    "jsdoc-skyceil": "^1.0.6",
+    "mongoose": "^5.11.15"
+  }
 }

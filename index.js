@@ -15,7 +15,7 @@ db.set('useFindAndModify', false)
 class Client {
 constructor(url) {
       if (!url) throw new TypeError("You didn't provide a MongoDB connection string");
-  return await db.connect(url, {
+  db.connect(url, {
 useNewUrlParser: true,
 useUnifiesTopology: true
 })
