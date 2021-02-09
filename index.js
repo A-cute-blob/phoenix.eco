@@ -56,7 +56,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
                 userId: id,
                 bankSpace: 1000,
                 coinsInBank: 0,
-                coinsInWallet: parseInt(amount)
+                wallet: parseInt(amount)
             });
 
             await newData.save()
@@ -92,7 +92,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
  
                 bankSpace: 1000,
                 coinsInBank: 0,
-                coinsInWallet: 0
+                wallet: 0
             });
 
             await newData.save()
@@ -136,7 +136,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
                 userId: userId,
                 bankSpace: 1000 + parseInt(amount),
                 coinsInBank: 0,
-                coinsInWallet: 0
+                 wallet: 0
             });
 
             await newData.save()
@@ -168,7 +168,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
             userId: userId,
             bankSpace: 1000,
             coinsInBank: 0,
-            coinsInWallet: 0
+             wallet: 0
         });
 
         await newData.save()
@@ -201,7 +201,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
         if (!amount) throw new TypeError("Please provide the amount of users to show.");
         if (isNaN(amount)) throw new TypeError("Amount must be a number");
 
-        let users = await currencyModel.find({}).sort([['coinsInWallet', 'descending']]).exec();
+        let users = await currencyModel.find({}).sort([['wallet', 'descending']]).exec();
 
         return users.slice(0, amount);
     }
