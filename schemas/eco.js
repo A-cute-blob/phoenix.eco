@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const eco = new mongoose.Schema({
     userId: String,
-    coinsInWallet: Number,
+    wallet: Number,
     coinsInBank: Number,
     bankSpace: Number
 });
