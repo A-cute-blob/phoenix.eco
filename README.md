@@ -29,7 +29,8 @@ const eco = new Client('mongodb://localhost/phoenixeco')
     Networth: ${user.coinsInBank + user.wallet}`);
     
     message.channel.send(embed);
-    ```
+ ```
+    
     
  - Give money
  
