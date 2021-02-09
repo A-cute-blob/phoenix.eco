@@ -161,7 +161,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
     static async newUser(userId) {
         if (!userId) throw new TypeError("Please provide a user ID.");
 
-        let user = await eco.findOne({ userId: userId, guildId: guildId });
+        let user = await eco.findOne({ userId: userId });
         if (user) return false;
 
         let newData = new eco({
