@@ -121,7 +121,6 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
         /**
      * 
      * @param {string} userId - A discord user ID.
-     * @param {string} guildId - A discord guild ID.
      * @param {string} amount - Amount of bank space to give.
      */
     
@@ -157,7 +156,6 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
           /**
      * 
      * @param {string} userId - A discord user ID.
-     * @param {string} guildId - A discord guild ID.
      */
 
     static async newUser(userId) {
@@ -195,8 +193,7 @@ if(amount < 0) throw new TypeError("The amount cannot be under 0")
     }
       
     /**
-     * 
-     * @param {string} guildId - A discord guild ID.
+     *
      * @param {number} amount - The amount of users to show.
      */
 
